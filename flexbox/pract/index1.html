@@ -42,6 +42,51 @@
           gap: 1rem;
         }
       }
+
+      main {
+        padding: 32px;
+        text-align: center;
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+      }
+
+      main h2 {
+        font-size: 24px;
+        color: #000000;
+      }
+
+      .proj {
+        text-align: left;
+      }
+
+      .flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .projects {
+        text-align: center;
+        border: 1px solid #ccc;
+        padding: 32px;
+        background-color: #f4f4f4;
+        flex: 1 1 45%;
+      }
+
+      @media (max-width: 768px) {
+        .projects {
+          flex: 1 1 90%;
+        }
+      }
+
+      footer {
+        background-color: #333333;
+        margin: 32px 0px 0px 0px;
+        text-align: center;
+        padding: 16px 0px;
+        color: #ffffff;
+      }
     </style>
   </head>
   <body>
@@ -55,12 +100,14 @@
       </nav>
     </header>
     <main>
-      <h2>Welcome to My Portfolio</h2>
-      <p>
-        This is a simple layout created using Flexbox. You can use it to
-        practice Flexbox features!
-      </p>
-      <h2>Projects</h2>
+      <div>
+        <h2>Welcome to My Portfolio</h2>
+        <p>
+          This is a simple layout created using Flexbox. You can use it to
+          practice Flexbox features!
+        </p>
+      </div>
+      <h2 class="proj">Projects</h2>
       <div class="flex">
         <div class="projects">Project 1</div>
         <div class="projects">Project 2</div>
