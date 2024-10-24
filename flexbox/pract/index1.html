@@ -4,15 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+      header {
+        text-align: center;
+        background-color: #333333;
+        padding: 16px 0px;
+      }
+
+      header > h1 {
+        font-size: 32px;
+        color: #ffffff;
+      }
+
+      nav {
+        display: inline-flex;
+        gap: 2rem;
+      }
+
+      a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      @media (max-width: 768px) {
+        nav {
+          flex-direction: column;
+          gap: 1rem;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
       <h1>My Portfolio</h1>
       <nav>
-        <div class="item">Home</div>
-        <div class="item">About</div>
-        <div class="item">Projects</div>
-        <div class="item">Contact</div>
+        <div class="item"><a href="#">Home</a></div>
+        <div class="item"><a href="#">About</a></div>
+        <div class="item"><a href="#">Projects</a></div>
+        <div class="item"><a href="#">Contact</a></div>
       </nav>
     </header>
     <main>
