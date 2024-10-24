@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Portfolio</title>
+    <style>
+      /* Global Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        padding: 1em 0;
+        text-align: center;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+      }
+
+      main {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .intro {
+        text-align: center;
+      }
+
+      .projects {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .project-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: space-between;
+      }
+
+      .project-item {
+        background-color: #f4f4f4;
+        padding: 2rem;
+        flex: 1 1 45%;
+        text-align: center;
+        border: 1px solid #ccc;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1em 0;
+        margin-top: 2rem;
+      }
+
+      /* Media Queries */
+      @media (max-width: 768px) {
+        nav ul {
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .project-list {
+          flex-direction: column;
+        }
+
+        .project-item {
+          flex: 1 1 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro">
+        <h2>Welcome to My Portfolio</h2>
+        <p>
+          This is a simple layout created using Flexbox. You can use it to
+          practice Flexbox features!
+        </p>
+      </section>
+
+      <section class="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+          <div class="project-item">Project 1</div>
+          <div class="project-item">Project 2</div>
+          <div class="project-item">Project 3</div>
+          <div class="project-item">Project 4</div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Sabir Kazi. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
